@@ -1,0 +1,197 @@
+# Complex Systems: Theory, Models, and Numerical Experiments
+
+## Overview
+
+This repository presents a collection of numerical experiments devoted to the study of **complex systems**, with emphasis on **nonlinear dynamics**, **emergence**, and **chaos**. The central goal is to explore how simple deterministic or stochastic rules, when iterated or coupled, give rise to rich macroscopic behaviors that cannot be trivially inferred from microscopic dynamics.
+
+The repository is theory-oriented: the code serves as a computational realization of well-established models in statistical physics and nonlinear science.
+
+---
+
+## Conceptual Framework
+
+Complex systems are characterized by nonlinearity, feedback, sensitivity to initial conditions, and the emergence of collective behavior. Their analysis typically relies on numerical simulations, statistical observables, and geometric representations of phase space rather than closed-form solutions.
+
+This repository follows that paradigm by implementing canonical models that exhibit:
+- Order–chaos transitions  
+- Emergent spatiotemporal structures  
+- Scale invariance and fractality  
+- Anomalous transport and non-Gaussian statistics  
+
+---
+
+## Models and Code Structure
+
+Each script corresponds to a specific theoretical framework or class of models in complexity science.
+
+---
+
+### 1. Cellular Automata and Information Production
+
+**Files**
+- `automata_celular.py`
+- `automatas_celulares.py`
+
+**Theoretical Scope**
+
+These scripts implement **one-dimensional elementary cellular automata** with periodic boundary conditions. A local deterministic rule, specified by a Wolfram rule number, governs the time evolution of a binary lattice.
+
+Key theoretical concepts:
+- Discrete dynamical systems  
+- Local-to-global emergence  
+- Wolfram’s classification of cellular automata  
+- Computational universality  
+- **Shannon–Kolmogorov entropy** as a measure of information production  
+
+The simulations explore how different rules and initial conditions generate ordered, chaotic, or complex spatiotemporal patterns.
+
+---
+
+### 2. Bifurcation Theory and Low-Dimensional Chaos
+
+**File**
+- `bifurcaciones_2.py`
+
+**Theoretical Scope**
+
+This script studies classical routes to chaos through parameter variation in nonlinear systems.
+
+Models included:
+- **Henon map** (discrete-time chaotic map)
+- **Lorenz system** (continuous-time chaotic flow)
+
+Key theoretical concepts:
+- Fixed points and attractors  
+- Period-doubling cascades  
+- Feigenbaum universality  
+- Intermittency  
+- Phase-space reconstruction via time-delay embedding  
+- Bifurcation diagrams  
+
+The script highlights universal mechanisms underlying deterministic chaos.
+
+---
+
+### 3. Extended Systems and Spatiotemporal Chaos
+
+**File**
+- `sistemas_extendidos.py`
+
+**Theoretical Scope**
+
+This file implements a **two-dimensional coupled map lattice**, inspired by the model of Solé and Valls (1991), representing an extended nonlinear system with local interactions.
+
+Key theoretical concepts:
+- Coupled nonlinear dynamics  
+- Spatial degrees of freedom  
+- Pattern formation (e.g. spiral waves)  
+- Spatiotemporal chaos  
+- Self-organization far from equilibrium  
+
+The model illustrates how spatial coupling leads to emergent macroscopic order.
+
+---
+
+### 4. Random Walks, Lévy Walks, and Transport
+
+**File**
+- `Caminatas_aleatorias_y_deterministas.py`
+
+**Theoretical Scope**
+
+This script studies transport phenomena using both stochastic and deterministic walk models.
+
+Models included:
+- One- and two-dimensional **Brownian motion**
+- **Lévy walks** with power-law step-length distributions
+
+Key theoretical concepts:
+- Mean squared displacement scaling  
+- Normal diffusion vs. anomalous diffusion  
+- Central Limit Theorem  
+- Breakdown of Gaussian statistics  
+- Superdiffusion  
+
+These models are central to statistical physics, ecology, and biological transport processes.
+
+---
+
+### 5. Chaos Games, Fractals, and Scaling Laws
+
+**File**
+- `Generadores de Caos.py`
+
+**Theoretical Scope**
+
+This script explores the geometric structure of chaos and fractals using the **Chaos Game** framework.
+
+Topics covered:
+- **Sierpiński triangle** via iterated function systems  
+- Fractal self-similarity  
+- **Box-counting dimension** estimation  
+- Chaotic time series visualization using:
+  - Logistic map  
+  - Henon map  
+  - Lorenz system  
+
+The script emphasizes the connection between chaotic dynamics, symbolic encoding, and fractal geometry.
+
+---
+
+## Methodological Approach
+
+Across all scripts, a common methodology is followed:
+1. Definition of a nonlinear deterministic or stochastic rule  
+2. Iterative time or space evolution  
+3. Removal of transient dynamics  
+4. Quantitative characterization (entropy, MSD, bifurcations)  
+5. Visualization of trajectories, attractors, and distributions  
+
+This approach reflects standard practices in computational nonlinear science.
+
+---
+
+## Scientific Relevance
+
+The models implemented here are foundational in:
+- Statistical mechanics  
+- Nonlinear dynamics  
+- Complexity science  
+- Computational physics  
+- Theoretical biology and ecology  
+
+They demonstrate that **complexity is an emergent property**, not a consequence of complicated equations.
+
+---
+
+## Intended Use
+
+This repository is intended for:
+- Advanced undergraduate and graduate coursework  
+- Self-study in chaos and complexity  
+- Reproducible numerical experiments  
+- Conceptual illustration of theoretical results  
+
+The focus is on physical interpretation rather than computational optimization.
+
+---
+
+## Dependencies
+
+All simulations are written in **Python 3** and rely on standard scientific libraries:
+- NumPy  
+- Matplotlib  
+- SciPy  
+
+---
+
+## License
+
+This repository is provided for **educational and academic use**.  
+Reuse and modification are permitted with proper attribution.
+
+---
+
+## Closing Remark
+
+The unifying theme of this repository is that **order, randomness, and chaos are interconnected regimes** of dynamical systems. Through numerical experimentation, these regimes can be explored, visualized, and quantified, revealing universal structures that transcend specific models.
